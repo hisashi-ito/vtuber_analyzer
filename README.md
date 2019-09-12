@@ -1,2 +1,12 @@
-# vtuber_analyzer
-vtuber analyzer using YouTube Data API v3
+# Vtuber Analyzer
+Youtube Data API v3 を利用して特定ページ(チャネルIDよって識別される) のチャンネル情報および動画情報を取得して分析用データとして利用する。
+
+## 機能
+* チャンネル統計情報取得機能  
+チャンネルIDを指定した場合にチャンネルの統計情報を取得できる機能
+
+* チャンネル動画詳細情報取得機能
+特定のチャンネルに紐づく動画の詳細情報を取得できる機能
+
+## 補足
+google API keyの受け渡しは実行するホストで環境変数 `GOOGLE_API_KEY` に指定しておくことで情報を授受することにする。
