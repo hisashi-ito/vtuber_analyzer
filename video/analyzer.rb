@@ -20,7 +20,8 @@ class Analyzer
   def pub_hour()
     ret = {}
     @videos.each do |video|
-      hour = Time::parse(viode.pub_date).hour
+      p video.pub_date
+      hour = Time::parse(video.pub_date).hour
       ret[hour] ||= 0
       ret[hour] += 1
     end

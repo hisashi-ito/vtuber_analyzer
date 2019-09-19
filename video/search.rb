@@ -26,7 +26,6 @@ def search(logger, channel_id)
   # 検索用URL の作成 (取得件数は50件[最大])
   url = END_POINT + "?part=snippet&channelId=#{channel_id}&key=#{GOOGLE_API_KEY}&resultsPerPage=50"
   url_next = nil
-  p url
   # nextPageToken がなくなるまで検索する(ただし最大閾値は事前に設定)
   next_page_token = nil
   0.upto(MAX_SEARCH){|i|
